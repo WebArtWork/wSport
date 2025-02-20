@@ -82,8 +82,11 @@ const routes: Routes = [
 						title: 'Tactic'
 					}
 				},
-				loadChildren: () => import('./pages/user/tactic/tactic.module').then(m => m.TacticModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/tactic/tactic.module').then(
+						(m) => m.TacticModule
+					)
+			},
 			{
 				path: 'tactics',
 				canActivate: [MetaGuard],
@@ -92,8 +95,11 @@ const routes: Routes = [
 						title: 'Tactics'
 					}
 				},
-				loadChildren: () => import('./pages/user/tactics/tactics.module').then(m => m.TacticsModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/tactics/tactics.module').then(
+						(m) => m.TacticsModule
+					)
+			},
 			{
 				path: 'contract',
 				canActivate: [MetaGuard],
@@ -102,8 +108,11 @@ const routes: Routes = [
 						title: 'Contract'
 					}
 				},
-				loadChildren: () => import('./pages/user/contract/contract.module').then(m => m.ContractModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/contract/contract.module').then(
+						(m) => m.ContractModule
+					)
+			},
 			{
 				path: 'contracts',
 				canActivate: [MetaGuard],
@@ -112,18 +121,11 @@ const routes: Routes = [
 						title: 'Contracts'
 					}
 				},
-				loadChildren: () => import('./pages/user/contracts/contracts.module').then(m => m.ContractsModule)
-			}, 
-			{
-				path: 'gear-item',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Gear-item'
-					}
-				},
-				loadChildren: () => import('./pages/user/gear-item/gear-item.module').then(m => m.Gear-itemModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/contracts/contracts.module').then(
+						(m) => m.ContractsModule
+					)
+			},
 			{
 				path: 'gear',
 				canActivate: [MetaGuard],
@@ -132,8 +134,11 @@ const routes: Routes = [
 						title: 'Gear'
 					}
 				},
-				loadChildren: () => import('./pages/user/gear/gear.module').then(m => m.GearModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/gear/gear.module').then(
+						(m) => m.GearModule
+					)
+			},
 			{
 				path: 'facility',
 				canActivate: [MetaGuard],
@@ -142,8 +147,11 @@ const routes: Routes = [
 						title: 'Facility'
 					}
 				},
-				loadChildren: () => import('./pages/user/facility/facility.module').then(m => m.FacilityModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/facility/facility.module').then(
+						(m) => m.FacilityModule
+					)
+			},
 			{
 				path: 'facilities',
 				canActivate: [MetaGuard],
@@ -152,8 +160,11 @@ const routes: Routes = [
 						title: 'Facilities'
 					}
 				},
-				loadChildren: () => import('./pages/user/facilities/facilities.module').then(m => m.FacilitiesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/facilities/facilities.module').then(
+						(m) => m.FacilitiesModule
+					)
+			},
 			{
 				path: 'team',
 				canActivate: [MetaGuard],
@@ -162,8 +173,11 @@ const routes: Routes = [
 						title: 'Team'
 					}
 				},
-				loadChildren: () => import('./pages/user/team/team.module').then(m => m.TeamModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/team/team.module').then(
+						(m) => m.TeamModule
+					)
+			},
 			{
 				path: 'teams',
 				canActivate: [MetaGuard],
@@ -172,8 +186,11 @@ const routes: Routes = [
 						title: 'Teams'
 					}
 				},
-				loadChildren: () => import('./pages/user/teams/teams.module').then(m => m.TeamsModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/teams/teams.module').then(
+						(m) => m.TeamsModule
+					)
+			},
 			{
 				path: 'club',
 				canActivate: [MetaGuard],
@@ -182,8 +199,11 @@ const routes: Routes = [
 						title: 'Club'
 					}
 				},
-				loadChildren: () => import('./pages/user/club/club.module').then(m => m.ClubModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/club/club.module').then(
+						(m) => m.ClubModule
+					)
+			},
 			{
 				path: 'clubs',
 				canActivate: [MetaGuard],
@@ -192,8 +212,11 @@ const routes: Routes = [
 						title: 'Clubs'
 					}
 				},
-				loadChildren: () => import('./pages/user/clubs/clubs.module').then(m => m.ClubsModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/clubs/clubs.module').then(
+						(m) => m.ClubsModule
+					)
+			},
 			{
 				path: 'referee',
 				canActivate: [MetaGuard],
@@ -202,8 +225,11 @@ const routes: Routes = [
 						title: 'Referee'
 					}
 				},
-				loadChildren: () => import('./pages/user/referee/referee.module').then(m => m.RefereeModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/referee/referee.module').then(
+						(m) => m.RefereeModule
+					)
+			},
 			{
 				path: 'referees',
 				canActivate: [MetaGuard],
@@ -212,8 +238,11 @@ const routes: Routes = [
 						title: 'Referees'
 					}
 				},
-				loadChildren: () => import('./pages/user/referees/referees.module').then(m => m.RefereesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/referees/referees.module').then(
+						(m) => m.RefereesModule
+					)
+			},
 			{
 				path: 'coach',
 				canActivate: [MetaGuard],
@@ -222,8 +251,11 @@ const routes: Routes = [
 						title: 'Coach'
 					}
 				},
-				loadChildren: () => import('./pages/user/coach/coach.module').then(m => m.CoachModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/coach/coach.module').then(
+						(m) => m.CoachModule
+					)
+			},
 			{
 				path: 'coaches',
 				canActivate: [MetaGuard],
@@ -232,8 +264,11 @@ const routes: Routes = [
 						title: 'Coaches'
 					}
 				},
-				loadChildren: () => import('./pages/user/coaches/coaches.module').then(m => m.CoachesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/coaches/coaches.module').then(
+						(m) => m.CoachesModule
+					)
+			},
 			{
 				path: 'player',
 				canActivate: [MetaGuard],
@@ -242,8 +277,11 @@ const routes: Routes = [
 						title: 'Player'
 					}
 				},
-				loadChildren: () => import('./pages/user/player/player.module').then(m => m.PlayerModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/player/player.module').then(
+						(m) => m.PlayerModule
+					)
+			},
 			{
 				path: 'players',
 				canActivate: [MetaGuard],
@@ -252,8 +290,11 @@ const routes: Routes = [
 						title: 'Players'
 					}
 				},
-				loadChildren: () => import('./pages/user/players/players.module').then(m => m.PlayersModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/players/players.module').then(
+						(m) => m.PlayersModule
+					)
+			},
 			{
 				path: 'match',
 				canActivate: [MetaGuard],
@@ -262,8 +303,11 @@ const routes: Routes = [
 						title: 'Match'
 					}
 				},
-				loadChildren: () => import('./pages/user/match/match.module').then(m => m.MatchModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/match/match.module').then(
+						(m) => m.MatchModule
+					)
+			},
 			{
 				path: 'matches',
 				canActivate: [MetaGuard],
@@ -272,8 +316,11 @@ const routes: Routes = [
 						title: 'Matches'
 					}
 				},
-				loadChildren: () => import('./pages/user/matches/matches.module').then(m => m.MatchesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/matches/matches.module').then(
+						(m) => m.MatchesModule
+					)
+			},
 			{
 				path: 'league',
 				canActivate: [MetaGuard],
@@ -282,8 +329,11 @@ const routes: Routes = [
 						title: 'League'
 					}
 				},
-				loadChildren: () => import('./pages/user/league/league.module').then(m => m.LeagueModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/league/league.module').then(
+						(m) => m.LeagueModule
+					)
+			},
 			{
 				path: 'leagues',
 				canActivate: [MetaGuard],
@@ -292,8 +342,11 @@ const routes: Routes = [
 						title: 'Leagues'
 					}
 				},
-				loadChildren: () => import('./pages/user/leagues/leagues.module').then(m => m.LeaguesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/leagues/leagues.module').then(
+						(m) => m.LeaguesModule
+					)
+			},
 			{
 				path: 'event',
 				canActivate: [MetaGuard],
@@ -302,8 +355,11 @@ const routes: Routes = [
 						title: 'Event'
 					}
 				},
-				loadChildren: () => import('./pages/user/event/event.module').then(m => m.EventModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/event/event.module').then(
+						(m) => m.EventModule
+					)
+			},
 			{
 				path: 'events',
 				canActivate: [MetaGuard],
@@ -312,8 +368,11 @@ const routes: Routes = [
 						title: 'Events'
 					}
 				},
-				loadChildren: () => import('./pages/user/events/events.module').then(m => m.EventsModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/events/events.module').then(
+						(m) => m.EventsModule
+					)
+			},
 			{
 				path: 'challenge',
 				canActivate: [MetaGuard],
@@ -322,8 +381,11 @@ const routes: Routes = [
 						title: 'Challenge'
 					}
 				},
-				loadChildren: () => import('./pages/user/challenge/challenge.module').then(m => m.ChallengeModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/challenge/challenge.module').then(
+						(m) => m.ChallengeModule
+					)
+			},
 			{
 				path: 'challenges',
 				canActivate: [MetaGuard],
@@ -332,8 +394,11 @@ const routes: Routes = [
 						title: 'Challenges'
 					}
 				},
-				loadChildren: () => import('./pages/user/challenges/challenges.module').then(m => m.ChallengesModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/challenges/challenges.module').then(
+						(m) => m.ChallengesModule
+					)
+			},
 			{
 				path: 'training',
 				canActivate: [MetaGuard],
@@ -342,8 +407,11 @@ const routes: Routes = [
 						title: 'Training'
 					}
 				},
-				loadChildren: () => import('./pages/user/training/training.module').then(m => m.TrainingModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/training/training.module').then(
+						(m) => m.TrainingModule
+					)
+			},
 			{
 				path: 'trainings',
 				canActivate: [MetaGuard],
@@ -352,8 +420,11 @@ const routes: Routes = [
 						title: 'Trainings'
 					}
 				},
-				loadChildren: () => import('./pages/user/trainings/trainings.module').then(m => m.TrainingsModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/trainings/trainings.module').then(
+						(m) => m.TrainingsModule
+					)
+			},
 			{
 				path: 'dashboard',
 				canActivate: [MetaGuard],
@@ -362,8 +433,11 @@ const routes: Routes = [
 						title: 'Dashboard'
 					}
 				},
-				loadChildren: () => import('./pages/user/dashboard/dashboard.module').then(m => m.DashboardModule)
-			}, 
+				loadChildren: () =>
+					import('./pages/user/dashboard/dashboard.module').then(
+						(m) => m.DashboardModule
+					)
+			},
 			{
 				path: 'sporttactics',
 				canActivate: [MetaGuard],
@@ -372,8 +446,11 @@ const routes: Routes = [
 						title: 'Sporttactics'
 					}
 				},
-				loadChildren: () => import('./modules/sporttactic/pages/sporttactics/sporttactics.module').then(m => m.SporttacticsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sporttactic/pages/sporttactics/sporttactics.module'
+					).then((m) => m.SporttacticsModule)
+			},
 			{
 				path: 'sportcontracts',
 				canActivate: [MetaGuard],
@@ -382,8 +459,11 @@ const routes: Routes = [
 						title: 'Sportcontracts'
 					}
 				},
-				loadChildren: () => import('./modules/sportcontract/pages/sportcontracts/sportcontracts.module').then(m => m.SportcontractsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportcontract/pages/sportcontracts/sportcontracts.module'
+					).then((m) => m.SportcontractsModule)
+			},
 			{
 				path: 'sportgears',
 				canActivate: [MetaGuard],
@@ -392,8 +472,11 @@ const routes: Routes = [
 						title: 'Sportgears'
 					}
 				},
-				loadChildren: () => import('./modules/sportgear/pages/sportgears/sportgears.module').then(m => m.SportgearsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportgear/pages/sportgears/sportgears.module'
+					).then((m) => m.SportgearsModule)
+			},
 			{
 				path: 'sportfacilities',
 				canActivate: [MetaGuard],
@@ -402,8 +485,11 @@ const routes: Routes = [
 						title: 'Sportfacilities'
 					}
 				},
-				loadChildren: () => import('./modules/sportfacility/pages/sportfacilities/sportfacilities.module').then(m => m.SportfacilitiesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportfacility/pages/sportfacilities/sportfacilities.module'
+					).then((m) => m.SportfacilitiesModule)
+			},
 			{
 				path: 'sportmatches',
 				canActivate: [MetaGuard],
@@ -412,8 +498,11 @@ const routes: Routes = [
 						title: 'Sportmatches'
 					}
 				},
-				loadChildren: () => import('./modules/sportmatch/pages/sportmatches/sportmatches.module').then(m => m.SportmatchesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportmatch/pages/sportmatches/sportmatches.module'
+					).then((m) => m.SportmatchesModule)
+			},
 			{
 				path: 'sportleagues',
 				canActivate: [MetaGuard],
@@ -422,8 +511,11 @@ const routes: Routes = [
 						title: 'Sportleagues'
 					}
 				},
-				loadChildren: () => import('./modules/sportleague/pages/sportleagues/sportleagues.module').then(m => m.SportleaguesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportleague/pages/sportleagues/sportleagues.module'
+					).then((m) => m.SportleaguesModule)
+			},
 			{
 				path: 'sportevents',
 				canActivate: [MetaGuard],
@@ -432,8 +524,11 @@ const routes: Routes = [
 						title: 'Sportevents'
 					}
 				},
-				loadChildren: () => import('./modules/sportevent/pages/sportevents/sportevents.module').then(m => m.SporteventsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportevent/pages/sportevents/sportevents.module'
+					).then((m) => m.SporteventsModule)
+			},
 			{
 				path: 'sportteams',
 				canActivate: [MetaGuard],
@@ -442,8 +537,11 @@ const routes: Routes = [
 						title: 'Sportteams'
 					}
 				},
-				loadChildren: () => import('./modules/sportteam/pages/sportteams/sportteams.module').then(m => m.SportteamsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportteam/pages/sportteams/sportteams.module'
+					).then((m) => m.SportteamsModule)
+			},
 			{
 				path: 'sportclubs',
 				canActivate: [MetaGuard],
@@ -452,8 +550,11 @@ const routes: Routes = [
 						title: 'Sportclubs'
 					}
 				},
-				loadChildren: () => import('./modules/sportclub/pages/sportclubs/sportclubs.module').then(m => m.SportclubsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportclub/pages/sportclubs/sportclubs.module'
+					).then((m) => m.SportclubsModule)
+			},
 			{
 				path: 'sportreferees',
 				canActivate: [MetaGuard],
@@ -462,8 +563,11 @@ const routes: Routes = [
 						title: 'Sportreferees'
 					}
 				},
-				loadChildren: () => import('./modules/sportreferee/pages/sportreferees/sportreferees.module').then(m => m.SportrefereesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportreferee/pages/sportreferees/sportreferees.module'
+					).then((m) => m.SportrefereesModule)
+			},
 			{
 				path: 'sportcoaches',
 				canActivate: [MetaGuard],
@@ -472,8 +576,11 @@ const routes: Routes = [
 						title: 'Sportcoaches'
 					}
 				},
-				loadChildren: () => import('./modules/sportcoach/pages/sportcoaches/sportcoaches.module').then(m => m.SportcoachesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportcoach/pages/sportcoaches/sportcoaches.module'
+					).then((m) => m.SportcoachesModule)
+			},
 			{
 				path: 'sportplayers',
 				canActivate: [MetaGuard],
@@ -482,8 +589,11 @@ const routes: Routes = [
 						title: 'Sportplayers'
 					}
 				},
-				loadChildren: () => import('./modules/sportplayer/pages/sportplayers/sportplayers.module').then(m => m.SportplayersModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportplayer/pages/sportplayers/sportplayers.module'
+					).then((m) => m.SportplayersModule)
+			},
 			{
 				path: 'sporthealths',
 				canActivate: [MetaGuard],
@@ -492,8 +602,11 @@ const routes: Routes = [
 						title: 'Sporthealths'
 					}
 				},
-				loadChildren: () => import('./modules/sporthealth/pages/sporthealths/sporthealths.module').then(m => m.SporthealthsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sporthealth/pages/sporthealths/sporthealths.module'
+					).then((m) => m.SporthealthsModule)
+			},
 			{
 				path: 'sportrecoveries',
 				canActivate: [MetaGuard],
@@ -502,18 +615,11 @@ const routes: Routes = [
 						title: 'Sportrecoveries'
 					}
 				},
-				loadChildren: () => import('./modules/sportrecovery/pages/sportrecoveries/sportrecoveries.module').then(m => m.SportrecoveriesModule)
-			}, 
-			{
-				path: 'sportrecovery',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportrecovery'
-					}
-				},
-				loadChildren: () => import('./modules/sportrecovery/pages/sportrecovery/sportrecovery.module').then(m => m.SportrecoveryModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportrecovery/pages/sportrecoveries/sportrecoveries.module'
+					).then((m) => m.SportrecoveriesModule)
+			},
 			{
 				path: 'sportnutritions',
 				canActivate: [MetaGuard],
@@ -522,8 +628,11 @@ const routes: Routes = [
 						title: 'Sportnutritions'
 					}
 				},
-				loadChildren: () => import('./modules/sportnutrition/pages/sportnutritions/sportnutritions.module').then(m => m.SportnutritionsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportnutrition/pages/sportnutritions/sportnutritions.module'
+					).then((m) => m.SportnutritionsModule)
+			},
 			{
 				path: 'sportachievements',
 				canActivate: [MetaGuard],
@@ -532,8 +641,11 @@ const routes: Routes = [
 						title: 'Sportachievements'
 					}
 				},
-				loadChildren: () => import('./modules/sportachievement/pages/sportachievements/sportachievements.module').then(m => m.SportachievementsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportachievement/pages/sportachievements/sportachievements.module'
+					).then((m) => m.SportachievementsModule)
+			},
 			{
 				path: 'sportchallenges',
 				canActivate: [MetaGuard],
@@ -542,8 +654,11 @@ const routes: Routes = [
 						title: 'Sportchallenges'
 					}
 				},
-				loadChildren: () => import('./modules/sportchallenge/pages/sportchallenges/sportchallenges.module').then(m => m.SportchallengesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportchallenge/pages/sportchallenges/sportchallenges.module'
+					).then((m) => m.SportchallengesModule)
+			},
 			{
 				path: 'sporttrainings',
 				canActivate: [MetaGuard],
@@ -552,8 +667,11 @@ const routes: Routes = [
 						title: 'Sporttrainings'
 					}
 				},
-				loadChildren: () => import('./modules/sporttraining/pages/sporttrainings/sporttrainings.module').then(m => m.SporttrainingsModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sporttraining/pages/sporttrainings/sporttrainings.module'
+					).then((m) => m.SporttrainingsModule)
+			},
 			{
 				path: 'sportactivities',
 				canActivate: [MetaGuard],
@@ -562,8 +680,11 @@ const routes: Routes = [
 						title: 'Sportactivities'
 					}
 				},
-				loadChildren: () => import('./modules/sportactivity/pages/sportactivities/sportactivities.module').then(m => m.SportactivitiesModule)
-			}, 
+				loadChildren: () =>
+					import(
+						'./modules/sportactivity/pages/sportactivities/sportactivities.module'
+					).then((m) => m.SportactivitiesModule)
+			},
 			{
 				path: 'profile',
 				canActivate: [MetaGuard],

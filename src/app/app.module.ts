@@ -75,6 +75,496 @@ const routes: Routes = [
 		children: [
 			/* user */
 			{
+				path: 'tactic',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Tactic'
+					}
+				},
+				loadChildren: () => import('./pages/user/tactic/tactic.module').then(m => m.TacticModule)
+			}, 
+			{
+				path: 'tactics',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Tactics'
+					}
+				},
+				loadChildren: () => import('./pages/user/tactics/tactics.module').then(m => m.TacticsModule)
+			}, 
+			{
+				path: 'contract',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Contract'
+					}
+				},
+				loadChildren: () => import('./pages/user/contract/contract.module').then(m => m.ContractModule)
+			}, 
+			{
+				path: 'contracts',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Contracts'
+					}
+				},
+				loadChildren: () => import('./pages/user/contracts/contracts.module').then(m => m.ContractsModule)
+			}, 
+			{
+				path: 'gear-item',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Gear-item'
+					}
+				},
+				loadChildren: () => import('./pages/user/gear-item/gear-item.module').then(m => m.Gear-itemModule)
+			}, 
+			{
+				path: 'gear',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Gear'
+					}
+				},
+				loadChildren: () => import('./pages/user/gear/gear.module').then(m => m.GearModule)
+			}, 
+			{
+				path: 'facility',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Facility'
+					}
+				},
+				loadChildren: () => import('./pages/user/facility/facility.module').then(m => m.FacilityModule)
+			}, 
+			{
+				path: 'facilities',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Facilities'
+					}
+				},
+				loadChildren: () => import('./pages/user/facilities/facilities.module').then(m => m.FacilitiesModule)
+			}, 
+			{
+				path: 'team',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Team'
+					}
+				},
+				loadChildren: () => import('./pages/user/team/team.module').then(m => m.TeamModule)
+			}, 
+			{
+				path: 'teams',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Teams'
+					}
+				},
+				loadChildren: () => import('./pages/user/teams/teams.module').then(m => m.TeamsModule)
+			}, 
+			{
+				path: 'club',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Club'
+					}
+				},
+				loadChildren: () => import('./pages/user/club/club.module').then(m => m.ClubModule)
+			}, 
+			{
+				path: 'clubs',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Clubs'
+					}
+				},
+				loadChildren: () => import('./pages/user/clubs/clubs.module').then(m => m.ClubsModule)
+			}, 
+			{
+				path: 'referee',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Referee'
+					}
+				},
+				loadChildren: () => import('./pages/user/referee/referee.module').then(m => m.RefereeModule)
+			}, 
+			{
+				path: 'referees',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Referees'
+					}
+				},
+				loadChildren: () => import('./pages/user/referees/referees.module').then(m => m.RefereesModule)
+			}, 
+			{
+				path: 'coach',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Coach'
+					}
+				},
+				loadChildren: () => import('./pages/user/coach/coach.module').then(m => m.CoachModule)
+			}, 
+			{
+				path: 'coaches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Coaches'
+					}
+				},
+				loadChildren: () => import('./pages/user/coaches/coaches.module').then(m => m.CoachesModule)
+			}, 
+			{
+				path: 'player',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Player'
+					}
+				},
+				loadChildren: () => import('./pages/user/player/player.module').then(m => m.PlayerModule)
+			}, 
+			{
+				path: 'players',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Players'
+					}
+				},
+				loadChildren: () => import('./pages/user/players/players.module').then(m => m.PlayersModule)
+			}, 
+			{
+				path: 'match',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Match'
+					}
+				},
+				loadChildren: () => import('./pages/user/match/match.module').then(m => m.MatchModule)
+			}, 
+			{
+				path: 'matches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Matches'
+					}
+				},
+				loadChildren: () => import('./pages/user/matches/matches.module').then(m => m.MatchesModule)
+			}, 
+			{
+				path: 'league',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'League'
+					}
+				},
+				loadChildren: () => import('./pages/user/league/league.module').then(m => m.LeagueModule)
+			}, 
+			{
+				path: 'leagues',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Leagues'
+					}
+				},
+				loadChildren: () => import('./pages/user/leagues/leagues.module').then(m => m.LeaguesModule)
+			}, 
+			{
+				path: 'event',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Event'
+					}
+				},
+				loadChildren: () => import('./pages/user/event/event.module').then(m => m.EventModule)
+			}, 
+			{
+				path: 'events',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Events'
+					}
+				},
+				loadChildren: () => import('./pages/user/events/events.module').then(m => m.EventsModule)
+			}, 
+			{
+				path: 'challenge',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Challenge'
+					}
+				},
+				loadChildren: () => import('./pages/user/challenge/challenge.module').then(m => m.ChallengeModule)
+			}, 
+			{
+				path: 'challenges',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Challenges'
+					}
+				},
+				loadChildren: () => import('./pages/user/challenges/challenges.module').then(m => m.ChallengesModule)
+			}, 
+			{
+				path: 'training',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Training'
+					}
+				},
+				loadChildren: () => import('./pages/user/training/training.module').then(m => m.TrainingModule)
+			}, 
+			{
+				path: 'trainings',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Trainings'
+					}
+				},
+				loadChildren: () => import('./pages/user/trainings/trainings.module').then(m => m.TrainingsModule)
+			}, 
+			{
+				path: 'dashboard',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Dashboard'
+					}
+				},
+				loadChildren: () => import('./pages/user/dashboard/dashboard.module').then(m => m.DashboardModule)
+			}, 
+			{
+				path: 'sporttactics',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporttactics'
+					}
+				},
+				loadChildren: () => import('./modules/sporttactic/pages/sporttactics/sporttactics.module').then(m => m.SporttacticsModule)
+			}, 
+			{
+				path: 'sportcontracts',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportcontracts'
+					}
+				},
+				loadChildren: () => import('./modules/sportcontract/pages/sportcontracts/sportcontracts.module').then(m => m.SportcontractsModule)
+			}, 
+			{
+				path: 'sportgears',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportgears'
+					}
+				},
+				loadChildren: () => import('./modules/sportgear/pages/sportgears/sportgears.module').then(m => m.SportgearsModule)
+			}, 
+			{
+				path: 'sportfacilities',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportfacilities'
+					}
+				},
+				loadChildren: () => import('./modules/sportfacility/pages/sportfacilities/sportfacilities.module').then(m => m.SportfacilitiesModule)
+			}, 
+			{
+				path: 'sportmatches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportmatches'
+					}
+				},
+				loadChildren: () => import('./modules/sportmatch/pages/sportmatches/sportmatches.module').then(m => m.SportmatchesModule)
+			}, 
+			{
+				path: 'sportleagues',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportleagues'
+					}
+				},
+				loadChildren: () => import('./modules/sportleague/pages/sportleagues/sportleagues.module').then(m => m.SportleaguesModule)
+			}, 
+			{
+				path: 'sportevents',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportevents'
+					}
+				},
+				loadChildren: () => import('./modules/sportevent/pages/sportevents/sportevents.module').then(m => m.SporteventsModule)
+			}, 
+			{
+				path: 'sportteams',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportteams'
+					}
+				},
+				loadChildren: () => import('./modules/sportteam/pages/sportteams/sportteams.module').then(m => m.SportteamsModule)
+			}, 
+			{
+				path: 'sportclubs',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportclubs'
+					}
+				},
+				loadChildren: () => import('./modules/sportclub/pages/sportclubs/sportclubs.module').then(m => m.SportclubsModule)
+			}, 
+			{
+				path: 'sportreferees',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportreferees'
+					}
+				},
+				loadChildren: () => import('./modules/sportreferee/pages/sportreferees/sportreferees.module').then(m => m.SportrefereesModule)
+			}, 
+			{
+				path: 'sportcoaches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportcoaches'
+					}
+				},
+				loadChildren: () => import('./modules/sportcoach/pages/sportcoaches/sportcoaches.module').then(m => m.SportcoachesModule)
+			}, 
+			{
+				path: 'sportplayers',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportplayers'
+					}
+				},
+				loadChildren: () => import('./modules/sportplayer/pages/sportplayers/sportplayers.module').then(m => m.SportplayersModule)
+			}, 
+			{
+				path: 'sporthealths',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporthealths'
+					}
+				},
+				loadChildren: () => import('./modules/sporthealth/pages/sporthealths/sporthealths.module').then(m => m.SporthealthsModule)
+			}, 
+			{
+				path: 'sportrecoveries',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportrecoveries'
+					}
+				},
+				loadChildren: () => import('./modules/sportrecovery/pages/sportrecoveries/sportrecoveries.module').then(m => m.SportrecoveriesModule)
+			}, 
+			{
+				path: 'sportrecovery',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportrecovery'
+					}
+				},
+				loadChildren: () => import('./modules/sportrecovery/pages/sportrecovery/sportrecovery.module').then(m => m.SportrecoveryModule)
+			}, 
+			{
+				path: 'sportnutritions',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportnutritions'
+					}
+				},
+				loadChildren: () => import('./modules/sportnutrition/pages/sportnutritions/sportnutritions.module').then(m => m.SportnutritionsModule)
+			}, 
+			{
+				path: 'sportachievements',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportachievements'
+					}
+				},
+				loadChildren: () => import('./modules/sportachievement/pages/sportachievements/sportachievements.module').then(m => m.SportachievementsModule)
+			}, 
+			{
+				path: 'sportchallenges',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportchallenges'
+					}
+				},
+				loadChildren: () => import('./modules/sportchallenge/pages/sportchallenges/sportchallenges.module').then(m => m.SportchallengesModule)
+			}, 
+			{
+				path: 'sporttrainings',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporttrainings'
+					}
+				},
+				loadChildren: () => import('./modules/sporttraining/pages/sporttrainings/sporttrainings.module').then(m => m.SporttrainingsModule)
+			}, 
+			{
+				path: 'sportactivities',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportactivities'
+					}
+				},
+				loadChildren: () => import('./modules/sportactivity/pages/sportactivities/sportactivities.module').then(m => m.SportactivitiesModule)
+			}, 
+			{
 				path: 'profile',
 				canActivate: [MetaGuard],
 				data: {

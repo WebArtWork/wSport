@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { UserService } from 'src/app/modules/user/services/user.service';
+
+@Component({
+	templateUrl: './coaches.component.html',
+	styleUrls: ['./coaches.component.scss'],
+	standalone: false,
+})
+export class CoachesComponent {
+	isMenuOpen = false;
+
+	constructor(public userService: UserService) {}
+
+	back(): void {
+		window.history.back();
+	}
+}

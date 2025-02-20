@@ -69,6 +69,260 @@ const routes: Routes = [
 		]
 	},
 	{
+		path: 'manage',
+		canActivate: [AuthenticatedGuard],
+		component: UserComponent,
+		children: [
+			{
+				path: 'tactics',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporttactics'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sporttactic/pages/sporttactics/sporttactics.module'
+					).then((m) => m.SporttacticsModule)
+			},
+			{
+				path: 'contracts',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportcontracts'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportcontract/pages/sportcontracts/sportcontracts.module'
+					).then((m) => m.SportcontractsModule)
+			},
+			{
+				path: 'gears',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportgears'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportgear/pages/sportgears/sportgears.module'
+					).then((m) => m.SportgearsModule)
+			},
+			{
+				path: 'facilities',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportfacilities'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportfacility/pages/sportfacilities/sportfacilities.module'
+					).then((m) => m.SportfacilitiesModule)
+			},
+			{
+				path: 'matches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportmatches'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportmatch/pages/sportmatches/sportmatches.module'
+					).then((m) => m.SportmatchesModule)
+			},
+			{
+				path: 'leagues',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportleagues'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportleague/pages/sportleagues/sportleagues.module'
+					).then((m) => m.SportleaguesModule)
+			},
+			{
+				path: 'events',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportevents'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportevent/pages/sportevents/sportevents.module'
+					).then((m) => m.SporteventsModule)
+			},
+			{
+				path: 'teams',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportteams'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportteam/pages/sportteams/sportteams.module'
+					).then((m) => m.SportteamsModule)
+			},
+			{
+				path: 'clubs',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportclubs'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportclub/pages/sportclubs/sportclubs.module'
+					).then((m) => m.SportclubsModule)
+			},
+			{
+				path: 'referees',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportreferees'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportreferee/pages/sportreferees/sportreferees.module'
+					).then((m) => m.SportrefereesModule)
+			},
+			{
+				path: 'coaches',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportcoaches'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportcoach/pages/sportcoaches/sportcoaches.module'
+					).then((m) => m.SportcoachesModule)
+			},
+			{
+				path: 'players',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportplayers'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportplayer/pages/sportplayers/sportplayers.module'
+					).then((m) => m.SportplayersModule)
+			},
+			{
+				path: 'healths',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporthealths'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sporthealth/pages/sporthealths/sporthealths.module'
+					).then((m) => m.SporthealthsModule)
+			},
+			{
+				path: 'recoveries',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportrecoveries'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportrecovery/pages/sportrecoveries/sportrecoveries.module'
+					).then((m) => m.SportrecoveriesModule)
+			},
+			{
+				path: 'nutritions',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportnutritions'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportnutrition/pages/sportnutritions/sportnutritions.module'
+					).then((m) => m.SportnutritionsModule)
+			},
+			{
+				path: 'achievements',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportachievements'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportachievement/pages/sportachievements/sportachievements.module'
+					).then((m) => m.SportachievementsModule)
+			},
+			{
+				path: 'challenges',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportchallenges'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportchallenge/pages/sportchallenges/sportchallenges.module'
+					).then((m) => m.SportchallengesModule)
+			},
+			{
+				path: 'trainings',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sporttrainings'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sporttraining/pages/sporttrainings/sporttrainings.module'
+					).then((m) => m.SporttrainingsModule)
+			},
+			{
+				path: 'activities',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Sportactivities'
+					}
+				},
+				loadChildren: () =>
+					import(
+						'./modules/sportactivity/pages/sportactivities/sportactivities.module'
+					).then((m) => m.SportactivitiesModule)
+			}
+		]
+	},
+	{
 		path: '',
 		canActivate: [AuthenticatedGuard],
 		component: UserComponent,
@@ -437,253 +691,6 @@ const routes: Routes = [
 					import('./pages/user/dashboard/dashboard.module').then(
 						(m) => m.DashboardModule
 					)
-			},
-			{
-				path: 'sporttactics',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sporttactics'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sporttactic/pages/sporttactics/sporttactics.module'
-					).then((m) => m.SporttacticsModule)
-			},
-			{
-				path: 'sportcontracts',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportcontracts'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportcontract/pages/sportcontracts/sportcontracts.module'
-					).then((m) => m.SportcontractsModule)
-			},
-			{
-				path: 'sportgears',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportgears'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportgear/pages/sportgears/sportgears.module'
-					).then((m) => m.SportgearsModule)
-			},
-			{
-				path: 'sportfacilities',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportfacilities'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportfacility/pages/sportfacilities/sportfacilities.module'
-					).then((m) => m.SportfacilitiesModule)
-			},
-			{
-				path: 'sportmatches',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportmatches'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportmatch/pages/sportmatches/sportmatches.module'
-					).then((m) => m.SportmatchesModule)
-			},
-			{
-				path: 'sportleagues',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportleagues'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportleague/pages/sportleagues/sportleagues.module'
-					).then((m) => m.SportleaguesModule)
-			},
-			{
-				path: 'sportevents',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportevents'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportevent/pages/sportevents/sportevents.module'
-					).then((m) => m.SporteventsModule)
-			},
-			{
-				path: 'sportteams',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportteams'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportteam/pages/sportteams/sportteams.module'
-					).then((m) => m.SportteamsModule)
-			},
-			{
-				path: 'sportclubs',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportclubs'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportclub/pages/sportclubs/sportclubs.module'
-					).then((m) => m.SportclubsModule)
-			},
-			{
-				path: 'sportreferees',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportreferees'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportreferee/pages/sportreferees/sportreferees.module'
-					).then((m) => m.SportrefereesModule)
-			},
-			{
-				path: 'sportcoaches',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportcoaches'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportcoach/pages/sportcoaches/sportcoaches.module'
-					).then((m) => m.SportcoachesModule)
-			},
-			{
-				path: 'sportplayers',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportplayers'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportplayer/pages/sportplayers/sportplayers.module'
-					).then((m) => m.SportplayersModule)
-			},
-			{
-				path: 'sporthealths',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sporthealths'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sporthealth/pages/sporthealths/sporthealths.module'
-					).then((m) => m.SporthealthsModule)
-			},
-			{
-				path: 'sportrecoveries',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportrecoveries'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportrecovery/pages/sportrecoveries/sportrecoveries.module'
-					).then((m) => m.SportrecoveriesModule)
-			},
-			{
-				path: 'sportnutritions',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportnutritions'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportnutrition/pages/sportnutritions/sportnutritions.module'
-					).then((m) => m.SportnutritionsModule)
-			},
-			{
-				path: 'sportachievements',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportachievements'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportachievement/pages/sportachievements/sportachievements.module'
-					).then((m) => m.SportachievementsModule)
-			},
-			{
-				path: 'sportchallenges',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportchallenges'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportchallenge/pages/sportchallenges/sportchallenges.module'
-					).then((m) => m.SportchallengesModule)
-			},
-			{
-				path: 'sporttrainings',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sporttrainings'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sporttraining/pages/sporttrainings/sporttrainings.module'
-					).then((m) => m.SporttrainingsModule)
-			},
-			{
-				path: 'sportactivities',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Sportactivities'
-					}
-				},
-				loadChildren: () =>
-					import(
-						'./modules/sportactivity/pages/sportactivities/sportactivities.module'
-					).then((m) => m.SportactivitiesModule)
 			},
 			{
 				path: 'profile',
